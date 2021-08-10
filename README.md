@@ -6,4 +6,3 @@ url: https://share.streamlit.io/sergicalsix/urlapp/url.py
 - URLをQRコードに変換できます
 
 ## これからやること
-- download時のファイルの名前の変更
