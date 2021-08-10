@@ -46,7 +46,7 @@ if go == True :
         buffered = io.BytesIO()
         img.save(buffered,format="JPEG")
         img_str = base64.b64encode(buffered.getvalue()).decode()
-        href = f'<a href="data:file/jpg;base64,{img_str}"> Download image </a>'
+        href = f'<a href="data:file/jpg;base64,{img_str}" download="qrImage.png"> Download image </a>'
 
         st.markdown( href, unsafe_allow_html=True)
 
@@ -64,6 +64,5 @@ st.write(""" ### - 備考
 st.write("""　### - 使用したPythonライブラリ
 - pyshorteners
 - qrcode
-- PIL
 - streamlit
 """)
